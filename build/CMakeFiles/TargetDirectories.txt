@@ -1,0 +1,3 @@
+/home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles/rebuild_cache.dir
+/home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles/ZED_Streaming_Sender.dir
+/home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles/edit_cache.dir
