@@ -1,4 +1,4 @@
-#include "Dependencies.h"
+#include "ZEDCom.h"
 
 int main(int argc, char **argv)
 {

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankster/_dev/ZED_JetsonNano
+CMAKE_SOURCE_DIR = /home/frankster/_dev/XRC_JetsonNano_Controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankster/_dev/ZED_JetsonNano/build
+CMAKE_BINARY_DIR = /home/frankster/_dev/XRC_JetsonNano_Controller/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles /home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles /home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ZED_Streaming_Sender
+# Target rules for targets named XRC_JetsonNano_Controller
 
 # Build rule for target.
-ZED_Streaming_Sender: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ZED_Streaming_Sender
-.PHONY : ZED_Streaming_Sender
+XRC_JetsonNano_Controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 XRC_JetsonNano_Controller
+.PHONY : XRC_JetsonNano_Controller
 
 # fast build rule for target.
-ZED_Streaming_Sender/fast:
-	$(MAKE) -f CMakeFiles/ZED_Streaming_Sender.dir/build.make CMakeFiles/ZED_Streaming_Sender.dir/build
-.PHONY : ZED_Streaming_Sender/fast
+XRC_JetsonNano_Controller/fast:
+	$(MAKE) -f CMakeFiles/XRC_JetsonNano_Controller.dir/build.make CMakeFiles/XRC_JetsonNano_Controller.dir/build
+.PHONY : XRC_JetsonNano_Controller/fast
 
-src/main.o: src/main.cpp.o
+src/XRC_JetsonMainController.o: src/XRC_JetsonMainController.cpp.o
 
-.PHONY : src/main.o
+.PHONY : src/XRC_JetsonMainController.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/ZED_Streaming_Sender.dir/build.make CMakeFiles/ZED_Streaming_Sender.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/XRC_JetsonMainController.cpp.o:
+	$(MAKE) -f CMakeFiles/XRC_JetsonNano_Controller.dir/build.make CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.o
+.PHONY : src/XRC_JetsonMainController.cpp.o
 
-src/main.i: src/main.cpp.i
+src/XRC_JetsonMainController.i: src/XRC_JetsonMainController.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/XRC_JetsonMainController.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/ZED_Streaming_Sender.dir/build.make CMakeFiles/ZED_Streaming_Sender.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/XRC_JetsonMainController.cpp.i:
+	$(MAKE) -f CMakeFiles/XRC_JetsonNano_Controller.dir/build.make CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.i
+.PHONY : src/XRC_JetsonMainController.cpp.i
 
-src/main.s: src/main.cpp.s
+src/XRC_JetsonMainController.s: src/XRC_JetsonMainController.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/XRC_JetsonMainController.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/ZED_Streaming_Sender.dir/build.make CMakeFiles/ZED_Streaming_Sender.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/XRC_JetsonMainController.cpp.s:
+	$(MAKE) -f CMakeFiles/XRC_JetsonNano_Controller.dir/build.make CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.s
+.PHONY : src/XRC_JetsonMainController.cpp.s
 
 # Help Target
 help:
@@ -157,11 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... ZED_Streaming_Sender"
+	@echo "... XRC_JetsonNano_Controller"
 	@echo "... edit_cache"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/XRC_JetsonMainController.o"
+	@echo "... src/XRC_JetsonMainController.i"
+	@echo "... src/XRC_JetsonMainController.s"
 .PHONY : help
 
 

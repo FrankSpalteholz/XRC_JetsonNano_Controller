@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/local/zed/include/sl",
+                "/usr/local/zed/include/",
                 "/usr/local/cuda-10.2/include"
             ],
             "defines": [],

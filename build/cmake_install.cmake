@@ -1,4 +1,4 @@
-# Install script for directory: /home/frankster/_dev/ZED_JetsonNano
+# Install script for directory: /home/frankster/_dev/XRC_JetsonNano_Controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/frankster/_dev/ZED_JetsonNano/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/frankster/_dev/XRC_JetsonNano_Controller/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -54,45 +54,45 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/frankster/_dev/ZED_JetsonNano
+CMAKE_SOURCE_DIR = /home/frankster/_dev/XRC_JetsonNano_Controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/frankster/_dev/ZED_JetsonNano/build
+CMAKE_BINARY_DIR = /home/frankster/_dev/XRC_JetsonNano_Controller/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/ZED_Streaming_Sender.dir
+# Target rules for target CMakeFiles/XRC_JetsonNano_Controller.dir
 
 # All Build rule for target.
-CMakeFiles/ZED_Streaming_Sender.dir/all:
-	$(MAKE) -f CMakeFiles/ZED_Streaming_Sender.dir/build.make CMakeFiles/ZED_Streaming_Sender.dir/depend
-	$(MAKE) -f CMakeFiles/ZED_Streaming_Sender.dir/build.make CMakeFiles/ZED_Streaming_Sender.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles --progress-num=1,2 "Built target ZED_Streaming_Sender"
-.PHONY : CMakeFiles/ZED_Streaming_Sender.dir/all
+CMakeFiles/XRC_JetsonNano_Controller.dir/all:
+	$(MAKE) -f CMakeFiles/XRC_JetsonNano_Controller.dir/build.make CMakeFiles/XRC_JetsonNano_Controller.dir/depend
+	$(MAKE) -f CMakeFiles/XRC_JetsonNano_Controller.dir/build.make CMakeFiles/XRC_JetsonNano_Controller.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles --progress-num=1,2 "Built target XRC_JetsonNano_Controller"
+.PHONY : CMakeFiles/XRC_JetsonNano_Controller.dir/all
 
 # Include target in all.
-all: CMakeFiles/ZED_Streaming_Sender.dir/all
+all: CMakeFiles/XRC_JetsonNano_Controller.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ZED_Streaming_Sender.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ZED_Streaming_Sender.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles 0
-.PHONY : CMakeFiles/ZED_Streaming_Sender.dir/rule
+CMakeFiles/XRC_JetsonNano_Controller.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/XRC_JetsonNano_Controller.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles 0
+.PHONY : CMakeFiles/XRC_JetsonNano_Controller.dir/rule
 
 # Convenience name for target.
-ZED_Streaming_Sender: CMakeFiles/ZED_Streaming_Sender.dir/rule
+XRC_JetsonNano_Controller: CMakeFiles/XRC_JetsonNano_Controller.dir/rule
 
-.PHONY : ZED_Streaming_Sender
-
-# clean rule for target.
-CMakeFiles/ZED_Streaming_Sender.dir/clean:
-	$(MAKE) -f CMakeFiles/ZED_Streaming_Sender.dir/build.make CMakeFiles/ZED_Streaming_Sender.dir/clean
-.PHONY : CMakeFiles/ZED_Streaming_Sender.dir/clean
+.PHONY : XRC_JetsonNano_Controller
 
 # clean rule for target.
-clean: CMakeFiles/ZED_Streaming_Sender.dir/clean
+CMakeFiles/XRC_JetsonNano_Controller.dir/clean:
+	$(MAKE) -f CMakeFiles/XRC_JetsonNano_Controller.dir/build.make CMakeFiles/XRC_JetsonNano_Controller.dir/clean
+.PHONY : CMakeFiles/XRC_JetsonNano_Controller.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/XRC_JetsonNano_Controller.dir/clean
 
 .PHONY : clean
 
