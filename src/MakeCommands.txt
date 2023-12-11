@@ -1,0 +1,2 @@
+g++ -g -Wall tcpServer.cpp -o tcpServer -I/$HOME/_dev/XRC_JetsonNano_Controller/src/
+sudo ./tcpServer
