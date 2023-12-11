@@ -5,7 +5,7 @@
 
 
 // ZED includes
-#include <sl/Camera.hpp>
+#include <Camera.hpp>
 
 // Sample includes
 #include "utils.hpp"
@@ -23,6 +23,7 @@ int main(int argc, char **argv) {
 
     // Set configuration parameters for the ZED
     InitParameters init_parameters;
+    
     init_parameters.camera_resolution = sl::RESOLUTION::AUTO;
     init_parameters.depth_mode = DEPTH_MODE::NONE;
     init_parameters.sdk_verbose = 1;

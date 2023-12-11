@@ -30,7 +30,7 @@ class Uart {
 
 };
 
-Uart ::Uart()
+Uart::Uart()
 {
 
     struct termios port_options; // Create the structure

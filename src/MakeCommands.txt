@@ -1,2 +1,7 @@
 g++ -g -Wall tcpServer.cpp -o tcpServer -I/$HOME/_dev/XRC_JetsonNano_Controller/src/
 sudo ./tcpServer
+
+/usr/local/zed/include/sl
+/usr/local/cuda-10.2/include
+
+g++ -g -Wall XRC_JetsonMainController.cpp -o XRC_Main -I/$HOME/_dev/XRC_JetsonNano_Controller/src/ -I/usr/local/zed/include/sl/ -I/usr/local/cuda-10.2/include -I/$HOME/_dev/XRC_JetsonNano_Controller/include
