@@ -10,6 +10,9 @@ TCPServer serverController;
 
 bool isZED = false;
 bool isTCPServer = true;
+bool isTCPRecv = false;
+bool isUart = true;
+bool isUartSend = false;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -19,9 +22,16 @@ int main(int argc, char **argv)
 {
     
     system("clear");
-    cout << "=====================================================================" << "\n";
-    cout << "XRC JetsonNano Controller" << "\n";
-    cout << "=====================================================================" << "\n\n\n";
+    cout << "[ XRC JetsonNano Controller Debug ]" << "\n";
+    cout << "__________________________________________________________________" << "\n\n";
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    if(isUart)
+    {
+        uartController.initUartPort();
+    }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -57,7 +67,28 @@ int main(int argc, char **argv)
                 
                 while (1)
                 {
-                    serverController.receiveMsgFromClient();
+                    if(serverController.receiveMsgFromClient())
+                    {
+                        if(!isTCPRecv)
+                        {
+                            cout << "[TCPServer] Receiving data from client ..." << "\n";
+                            isTCPRecv = true;
+                        }  
+                    }
+                    char * msg = serverController.getClientMsg();
+                    //cout << "[TCPServer] Data received: " << msg << endl;
+                    if(isUart)
+                    {
+                        auto uchrs = reinterpret_cast<unsigned char *>(const_cast<char *>(msg));
+                        
+                        if(!isUartSend)
+                        {
+                            cout << "[SERIAL] Sending data to ESP32 ..." << "\n";
+                            isUartSend = true;
+                        }
+                        uartController.sendUart(uchrs);
+                    }
+                    
                 }        
                 serverController.closeConnection();
             }

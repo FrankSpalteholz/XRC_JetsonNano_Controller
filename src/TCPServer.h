@@ -103,11 +103,11 @@ bool TCPServer::connectToClient()
     newSd = accept(serverSd, (sockaddr *)&newSockAddr, &newSockAddrSize);
     if(newSd < 0)
     {
-        cerr << "[TCPServer] Error accepting request from client" << endl;
+        cerr << "[TCPServer] Error accepting request from client ..." << endl;
         return 0;
     }
     
-    cout << "[TCPServer] Connected with client" << endl;
+    cout << "[TCPServer] Connected with client ..." << endl;
     return 1;
 }
 
@@ -131,8 +131,7 @@ bool TCPServer::receiveMsgFromClient()
     {
         cout << "[TCPServer] Client has quit the session" << endl;
         return 0;
-    }        
-    cout << "[TCPServer] Client: " << msg << endl; 
+    }         
     return 1;
 }
 
