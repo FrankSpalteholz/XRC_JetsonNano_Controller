@@ -3,6 +3,8 @@
 
 CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.o
  ../include/utils.hpp
+ /home/frankster/_dev/XRC_JetsonNano_Controller/src/TCPServer.h
+ /home/frankster/_dev/XRC_JetsonNano_Controller/src/Uart.h
  /home/frankster/_dev/XRC_JetsonNano_Controller/src/XRC_JetsonMainController.cpp
  /home/frankster/_dev/XRC_JetsonNano_Controller/src/ZEDCom.h
  /usr/local/cuda/include/builtin_types.h

@@ -1,6 +1,6 @@
 
 #include <sl/Camera.hpp>
-#include "utils.hpp"
+//#include "utils.hpp"
 
 
 using namespace sl;
@@ -21,7 +21,7 @@ class ZEDCom
         int parseArgs(int argc, char **argv, sl::InitParameters& param);
 
     public:
-        ZEDCom(/* args */);
+        ZEDCom();
         ~ZEDCom();
         
         void setConfiguration(int argc, char **argv);
@@ -56,7 +56,7 @@ int ZEDCom::openCam()
 {
     auto returned_state = _zedCam.open(_init_parameters);
     if (returned_state != ERROR_CODE::SUCCESS) {
-        print("Camera Open ...", returned_state, "Exit program...");
+        print("[ZED] Camera Open ...", returned_state, "[ZED] Exit program...");
         return EXIT_FAILURE;
     }
 
@@ -74,14 +74,14 @@ int ZEDCom::openCam()
 
     returned_state = _zedCam.enableStreaming(stream_params);
     if (returned_state != ERROR_CODE::SUCCESS) {
-        print("Streaming initialization error: ", returned_state);
+        print("[ZED] Streaming initialization error: ", returned_state);
         return EXIT_FAILURE;
     }
 
-    print("Streaming on port " + to_string(stream_params.port));
+    print("[ZED] Streaming on port " + to_string(stream_params.port));
 
     // TODO Move to main -> ctrl input for cancelation
-    SetCtrlHandler();
+    //SetCtrlHandler();
     return 0;
 }
 
@@ -93,7 +93,9 @@ void ZEDCom::setConfiguration(int argc, char **argv)
     _init_parameters.camera_resolution = sl::RESOLUTION::AUTO;
     _init_parameters.depth_mode = DEPTH_MODE::NONE;
     _init_parameters.sdk_verbose = 1;
-    _res_arg = parseArgs(_argc, _argv, _init_parameters);
+    
+    //TODO add custom configuration input
+    //_res_arg = parseArgs(_argc, _argv, _init_parameters);
 
 }
 
