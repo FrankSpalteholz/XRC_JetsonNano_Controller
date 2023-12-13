@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 {
     
     system("clear");
-    cout << "[ XRC JetsonNano Controller Debug ]" << "\n";
+    cout << "[ DEBUG XRC JetsonNano Controller ]" << "\n";
     cout << "__________________________________________________________________" << "\n\n";
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -63,6 +63,7 @@ int main(int argc, char **argv)
             
             if(serverController.connectToClient())
             {
+                cout << "\n";
                 serverController.getSessionTime();
                 
                 while (1)
@@ -76,7 +77,7 @@ int main(int argc, char **argv)
                         }  
                     }
                     char * msg = serverController.getClientMsg();
-                    //cout << "[TCPServer] Data received: " << msg << endl;
+                    //cout << "[TCPServer] Data received: " << msg;
                     if(isUart)
                     {
                         auto uchrs = reinterpret_cast<unsigned char *>(const_cast<char *>(msg));
@@ -86,6 +87,7 @@ int main(int argc, char **argv)
                             cout << "[SERIAL] Sending data to ESP32 ..." << "\n";
                             isUartSend = true;
                         }
+                        //cout << "[SERIAL] Sending data to ESP32 ..." << uchrs << "\n";
                         uartController.sendUart(uchrs);
                     }
                     

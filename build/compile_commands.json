@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/frankster/_dev/XRC_JetsonNano_Controller/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++   -I/usr/local/cuda/include -I/usr/local/zed/include -I/home/frankster/_dev/XRC_JetsonNano_Controller/include  -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.o -c /home/frankster/_dev/XRC_JetsonNano_Controller/src/XRC_JetsonMainController.cpp",
+  "file": "/home/frankster/_dev/XRC_JetsonNano_Controller/src/XRC_JetsonMainController.cpp"
+}
+]

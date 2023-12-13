@@ -152,7 +152,7 @@ void Uart::sendUart(unsigned char *msg)
         printf("[SERIAL] ERROR in UART TX ... \n");
     }
 
-    usleep(10000); // 0.01 sec delay
+    usleep(5000); // 5 millisecs delay
 }
 
 bool Uart ::sendUart_fb(unsigned char *msg)

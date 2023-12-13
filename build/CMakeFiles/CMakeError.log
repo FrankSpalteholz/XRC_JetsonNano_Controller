@@ -1,25 +1,25 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles/CMakeTmp
+Change Dir: /home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a6891/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a6891.dir/build.make CMakeFiles/cmTC_a6891.dir/build
-make[1]: Entering directory '/home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a6891.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_a6891.dir/CheckSymbolExists.c.o   -c /home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_a6891
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6891.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_a6891.dir/CheckSymbolExists.c.o  -o cmTC_a6891 
-CMakeFiles/cmTC_a6891.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_846aa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_846aa.dir/build.make CMakeFiles/cmTC_846aa.dir/build
+make[1]: Entering directory '/home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_846aa.dir/CheckSymbolExists.c.o
+/usr/bin/aarch64-linux-gnu-gcc    -o CMakeFiles/cmTC_846aa.dir/CheckSymbolExists.c.o   -c /home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_846aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_846aa.dir/link.txt --verbose=1
+/usr/bin/aarch64-linux-gnu-gcc      CMakeFiles/cmTC_846aa.dir/CheckSymbolExists.c.o  -o cmTC_846aa 
+CMakeFiles/cmTC_846aa.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
 CheckSymbolExists.c:(.text+0x18): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_a6891.dir/build.make:97: recipe for target 'cmTC_a6891' failed
-make[1]: *** [cmTC_a6891] Error 1
-make[1]: Leaving directory '/home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_a6891/fast' failed
-make: *** [cmTC_a6891/fast] Error 2
+CMakeFiles/cmTC_846aa.dir/build.make:97: recipe for target 'cmTC_846aa' failed
+make[1]: *** [cmTC_846aa] Error 1
+make[1]: Leaving directory '/home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_846aa/fast' failed
+make: *** [cmTC_846aa/fast] Error 2
 
-File /home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -35,22 +35,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles/CMakeTmp
+Change Dir: /home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a990c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a990c.dir/build.make CMakeFiles/cmTC_a990c.dir/build
-make[1]: Entering directory '/home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a990c.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a990c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a990c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a990c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_a990c.dir/CheckFunctionExists.c.o  -o cmTC_a990c -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_ccbdd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ccbdd.dir/build.make CMakeFiles/cmTC_ccbdd.dir/build
+make[1]: Entering directory '/home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ccbdd.dir/CheckFunctionExists.c.o
+/usr/bin/aarch64-linux-gnu-gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ccbdd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ccbdd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccbdd.dir/link.txt --verbose=1
+/usr/bin/aarch64-linux-gnu-gcc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ccbdd.dir/CheckFunctionExists.c.o  -o cmTC_ccbdd -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_a990c.dir/build.make:97: recipe for target 'cmTC_a990c' failed
-make[1]: *** [cmTC_a990c] Error 1
-make[1]: Leaving directory '/home/frankster/_dev/ZED_JetsonNano/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_a990c/fast' failed
-make: *** [cmTC_a990c/fast] Error 2
+CMakeFiles/cmTC_ccbdd.dir/build.make:97: recipe for target 'cmTC_ccbdd' failed
+make[1]: *** [cmTC_ccbdd] Error 1
+make[1]: Leaving directory '/home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ccbdd/fast' failed
+make: *** [cmTC_ccbdd/fast] Error 2
 
 

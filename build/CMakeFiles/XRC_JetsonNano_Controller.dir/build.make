@@ -60,15 +60,15 @@ include CMakeFiles/XRC_JetsonNano_Controller.dir/flags.make
 CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.o: CMakeFiles/XRC_JetsonNano_Controller.dir/flags.make
 CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.o: ../src/XRC_JetsonMainController.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/frankster/_dev/XRC_JetsonNano_Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.o -c /home/frankster/_dev/XRC_JetsonNano_Controller/src/XRC_JetsonMainController.cpp
+	/usr/bin/aarch64-linux-gnu-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.o -c /home/frankster/_dev/XRC_JetsonNano_Controller/src/XRC_JetsonMainController.cpp
 
 CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frankster/_dev/XRC_JetsonNano_Controller/src/XRC_JetsonMainController.cpp > CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/frankster/_dev/XRC_JetsonNano_Controller/src/XRC_JetsonMainController.cpp > CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.i
 
 CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frankster/_dev/XRC_JetsonNano_Controller/src/XRC_JetsonMainController.cpp -o CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/frankster/_dev/XRC_JetsonNano_Controller/src/XRC_JetsonMainController.cpp -o CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.s
 
 CMakeFiles/XRC_JetsonNano_Controller.dir/src/XRC_JetsonMainController.cpp.o.requires:
 
