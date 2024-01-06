@@ -87,7 +87,7 @@ int main(int argc, char **argv)
                             cout << "[SERIAL] Sending data to ESP32 ..." << "\n";
                             isUartSend = true;
                         }
-                        //cout << "[SERIAL] Sending data to ESP32 ..." << uchrs << "\n";
+                        //cout << "[SERIAL] Sending data to ESP32 ..." << uchrs;
                         uartController.sendUart(uchrs);
                     }
                     

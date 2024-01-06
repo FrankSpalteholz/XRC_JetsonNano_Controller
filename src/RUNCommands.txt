@@ -10,3 +10,6 @@ cd $HOME/_dev/XRC_JetsonMainController/build
 cmake ..
 make
 sudo ./XRC_JetsonNano_Controller 
+
+cd /usr/local/zed/samples/'camera streaming'/sender/cpp/build
+sudo ./ZED_Streaming_Sender
